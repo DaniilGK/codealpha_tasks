@@ -334,26 +334,7 @@ a:hover {
     .navigation {
         padding: 2.5%;
     }
-
-    /* .lightbox-prev,
-    .lightbox-next {
-       color: #fff3af;
-       font-size: 4rem;
-    }   
-
-    .lightbox-prev,
-    .lightbox-next,
-    .lightbox-close {
-        transition: transform 0.1s ease;
-    }   
     
-    .lightbox-prev:active,
-    .lightbox-next:active,
-    .lightbox-close:active {
-        transform: scale(1.2); 
-    } */
-    
-
     .footer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
