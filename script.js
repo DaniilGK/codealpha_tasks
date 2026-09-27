@@ -11,6 +11,9 @@ const numberBtn = document.querySelectorAll('.btn-number');
 
 const operatorSymbolsList = Array.from(operatorBtn).map(btn => btn.textContent);
 
+// hard cap; the display width stops input earlier when the line would overflow
+const MAX_INPUT_LENGTH = 20;
+
 // operator precedence for the Shunting-yard algorithm 
 const precedence = {
     '+': 2,
@@ -31,6 +34,35 @@ const operations = {
 
 // History array
 let historyArray = [];
+
+const measure = document.createElement("span");
+measure.style.position = "absolute";
+measure.style.visibility = "hidden";
+measure.style.whiteSpace = "nowrap";
+measure.style.pointerEvents = "none";
+measure.style.transition = "none";
+document.body.appendChild(measure);
+
+// width of the expression in the same font as the display
+function textWidth(text) {
+    const style = getComputedStyle(input);
+    measure.style.fontFamily = style.fontFamily;
+    measure.style.fontSize = style.fontSize;
+    measure.style.fontWeight = style.fontWeight;
+    measure.style.letterSpacing = style.letterSpacing;
+    measure.textContent = text;
+    return measure.offsetWidth;
+}
+
+// adds one character only when it stays inside the display
+function appendToInput(symbol) {
+    const next = input.textContent + symbol;
+    if (next.length > MAX_INPUT_LENGTH) return false;
+    if (input.clientWidth > 0 && textWidth(next) > input.clientWidth) return false;
+
+    input.textContent = next;
+    return true;
+}
 
 // checks the last character in the input is an operator
 function isLastCharOperator() {
@@ -169,9 +201,9 @@ function toggleParenthesis() {
 
     if (openCount > closeCount) {
         if (lastChar === "." || isLastCharOperator()) return;
-        input.textContent += ")";
-    } else {
-        input.textContent += "(";
+        if (!appendToInput(")")) return;
+    } else if (!appendToInput("(")) {
+        return;
     }
     updateRealTimeResult();
 }
@@ -208,13 +240,13 @@ function handleOperatorInput(symbol) {
     // turn "*" into "**", but never allow "***"
     if (symbol === "*" && lastChar === "*") {
         if (lastTwoChars === "**") return;
-        input.textContent += symbol;
+        appendToInput(symbol);
         return;
     }
 
     // block two operators in a row
     if (!isLastCharOperator()) {
-        input.textContent += symbol;
+        if (!appendToInput(symbol)) return;
     }
     updateRealTimeResult();
 }
@@ -233,7 +265,7 @@ function handleNumberInput(symbol) {
         if (isLastSegmentHasDot()) return;
     }
 
-    input.textContent += symbol;
+    if (!appendToInput(symbol)) return;
     updateRealTimeResult();
 }
 
