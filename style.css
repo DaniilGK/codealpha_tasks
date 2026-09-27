@@ -3,6 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+*::selection {
+  background: transparent;
 }
 
 body {
@@ -169,8 +177,7 @@ body {
 .wrapper .player .songs-img-container .song-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .wrapper .player .song-info {
   width: 100%;
@@ -347,8 +354,7 @@ body {
 }
 .wrapper .player input[type=range] {
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   background: transparent;
   outline: none;
 }
@@ -428,4 +434,6 @@ body {
     max-height: none;
     overflow-y: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
