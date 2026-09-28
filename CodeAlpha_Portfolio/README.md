@@ -34,7 +34,7 @@ Portfolio/
 
 ## **How to Run**
 
-Open [Portfolio](https://daniilgk.github.io/Portfolio/) in your browser.
+Open [Portfolio](https://daniilgk.github.io/codealpha_tasks/CodeAlpha_Portfolio/) in your browser.
 
 ## **Author**
 
