@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./icons8-calculator-32.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+
+            <div class="history-nav">
+                <div class="history" data-action="btn-history">
+                  <img style="width: 16px; height: 16px;" src="./history-svgrepo-com.svg" alt="history">
+                </div>
+
+                <div class="history" data-action="btn-history-clear">
+                    <img style="width: 20px; height: 20px;" src="./Delete-History.svg" alt="clear">
+                </div>
+            </div>
+            
+            <div class="history-list"></div>
+
+            <div class="display">
+                <div class="input"></div>
+                <div class="result"></div>
+                <div class="real-time-result"></div>
+            </div>
+
+            <div class="buttons">
+                <div class="number-arithmetic-buttons">
+                    <button class="btn btn-action" data-action="clear">AC</button>
+                    <button class="btn btn-action" data-action="parenthesis">()</button>
+                    <div class="btn-spacer"></div>
+                    <button class="btn btn-operator" data-operator="division">÷</button>
+                    <button class="btn btn-number" data-number="7">7</button>
+                    <button class="btn btn-number" data-number="8">8</button>
+                    <button class="btn btn-number" data-number="9">9</button>
+                    <button class="btn btn-operator" data-operator="multiplication">*</button>
+                    <button class="btn btn-number" data-number="4">4</button> 
+                    <button class="btn btn-number" data-number="5">5</button>
+                    <button class="btn btn-number" data-number="6">6</button>
+                    <button class="btn btn-operator" data-operator="subtraction">-</button>
+                    <button class="btn btn-number" data-number="1">1</button>
+                    <button class="btn btn-number" data-number="2">2</button> 
+                    <button class="btn btn-number" data-number="3">3</button>
+                    <button class="btn btn-operator" data-operator="addition">+</button>
+                    <button class="btn btn-number" data-number="0">0</button>
+                    <button class="btn btn-number" data-number="."">.</button>
+                    <button class="btn btn-action" data-action="del">⌫</button>
+                    <button class="btn btn-action" data-action="equal">=</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+
+        <p>Calculator</p>
+
+        <p>Made by <a href="https://github.com/DaniilGK" target="_blank">DaniilGK</a> for the <a href="https://www.codealpha.tech" target="_blank">CodeAlpha</a> Frontend Development Internship</p>
+
+        <p>Source code: <a href="https://github.com/DaniilGK/CodeAlpha_Calculator" target="_blank">GitHub repo</a></p>
+    
+        <p>&copy; 2026 Daniil Gerasimyonok</p>
+
+    </footer>
+
+    <script src="script.js"></script>   
+</body>
+</html>
