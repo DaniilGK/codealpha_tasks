@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/resume-blue.svg">
+    <title>Daniil Gerasimyonok - Portfolio</title>
+</head>
+<body>
+    <div class="global-parallax-bg">
+        <div class="parallax-shape" data-speed="15"></div>
+        <div class="parallax-shape" data-speed="30"></div>
+        <div class="parallax-shape" data-speed="50"></div>
+        <div class="parallax-shape" data-speed="25"></div>
+    </div>
+
+    <div class="wrapper">
+
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#about" class="logo">DG</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="main-container">
+
+                <section id="about" class="about animate-section">
+                    <div class="scroll-parallax-bg" data-scroll-speed="0.2"></div>
+
+                    <div class="about-content">
+                        <img src="./assets/avatar.jpg" alt="Daniil Gerasimyonok" class="about-avatar">
+                        <div class="about-text">
+                            <h1>Daniil Gerasimyonok</h1>
+                            <p class="about-title">Junior Frontend Developer</p>
+                                <p class="about-bio">
+                                    I'm a frontend developer building clean, responsive web interfaces with JavaScript, HTML, CSS, and Sass,
+                                    with a working understanding of Node.js. I'm currently taking on freelance frontend work alongside
+                                    building personal projects — including an image gallery with a custom lightbox and a calculator using
+                                    the Shunting-yard algorithm for correct operator precedence — and I'm comfortable working with AI tools
+                                    as part of my workflow. I'm looking for a trainee or junior role where I can keep growing and take on
+                                    more responsibility.
+                                </p>
+                            <div class="about-links">
+                                <a href="https://github.com/DaniilGK" target="_blank" class="about-link">
+                                    <svg class="link-icon" fill="#181717" aria-hidden="true"><use href="./assets/icons.svg#github"></use></svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/daniilgk/" target="_blank" class="about-link">
+                                    <svg class="link-icon" fill="#0076b2" aria-hidden="true"><use href="./assets/icons.svg#linkedin"></use></svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://leetcode.com/u/daniilgk/" target="_blank" class="about-link">
+                                    <svg class="link-icon" fill="#FFA116" aria-hidden="true"><use href="./assets/icons.svg#leetcode"></use></svg>
+                                    <span>LeetCode</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects" class="projects animate-section slide-left">
+                    <div class="scroll-parallax-bg" data-scroll-speed="0.2"></div>
+
+                    <h2 class="section-title">Projects</h2>
+                
+                    <div class="slider">
+                        <button class="slider-btn slider-prev" aria-label="Previous project">&#10094;</button>
+                        
+                        <div class="slider-track">
+                            <article class="project-card">
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/music_player.gif" alt="Music Player preview" class="project-image" loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Music Player</h3>
+                                    <p>A music player with a playlist, a progress bar synced to playback, and a 3D mouse-parallax background.</p>
+                                    <div class="project-tags">
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#E34F26" aria-hidden="true"><use href="./assets/icons.svg#html5"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#CC6699" aria-hidden="true"><use href="./assets/icons.svg#sass"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#F7DF1E" aria-hidden="true"><use href="./assets/icons.svg#javascript"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://daniilgk.github.io/CodeAlpha_MusicPlayer/" target="_blank">Live Demo</a>
+                                        <a href="https://github.com/DaniilGK/CodeAlpha_MusicPlayer" target="_blank">Source Code</a>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="project-card">
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/gallery.gif" alt="Image Gallery preview" class="project-image" loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Image Gallery</h3>
+                                    <p>A responsive image gallery with category filtering, a lightbox, and smooth transitions.</p>
+                                    <div class="project-tags">
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#E34F26" aria-hidden="true"><use href="./assets/icons.svg#html5"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#663399" aria-hidden="true"><use href="./assets/icons.svg#css"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#F7DF1E" aria-hidden="true"><use href="./assets/icons.svg#javascript"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://daniilgk.github.io/CodeAlpha_ImageGallery/" target="_blank">Live Demo</a>
+                                        <a href="https://github.com/DaniilGK/CodeAlpha_ImageGallery" target="_blank">Source Code</a>
+                                    </div>
+                                </div>
+                            </article>
+                
+                            <article class="project-card">
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/calculator.gif" alt="Calculator preview" class="project-image" loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Calculator</h3>
+                                    <p>A calculator with operator precedence, parentheses, a live preview, and calculation history.</p>
+                                    <div class="project-tags">
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#E34F26" aria-hidden="true"><use href="./assets/icons.svg#html5"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#663399" aria-hidden="true"><use href="./assets/icons.svg#css"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#F7DF1E" aria-hidden="true"><use href="./assets/icons.svg#javascript"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://daniilgk.github.io/CodeAlpha_Calculator/" target="_blank">Live Demo</a>
+                                        <a href="https://github.com/DaniilGK/CodeAlpha_Calculator" target="_blank">Source Code</a>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="project-card">
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/keyboard.gif" alt="Virtual Keyboard preview" class="project-image" loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Virtual Keyboard</h3>
+                                    <p>An on-screen keyboard with EN/RU layouts, Shift and Caps Lock, synced with the physical keyboard.</p>
+                                    <div class="project-tags">
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#E34F26" aria-hidden="true"><use href="./assets/icons.svg#html5"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#CC6699" aria-hidden="true"><use href="./assets/icons.svg#sass"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#F7DF1E" aria-hidden="true"><use href="./assets/icons.svg#javascript"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://daniilgk.github.io/keyboard/" target="_blank">Live Demo</a>
+                                        <a href="https://github.com/DaniilGK/keyboard/tree/keyboard" target="_blank">Source Code</a>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                        </div>
+                
+                        <button class="slider-btn slider-next" aria-label="Next project">&#10095;</button>
+                    </div>
+                </section>
+
+                <section id="skills" class="skills animate-section slide-right">
+                    <div class="scroll-parallax-bg" data-scroll-speed="0.12"></div>
+                    <h2 class="section-title">Skills</h2>
+                
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#E34F26" aria-hidden="true"><use href="./assets/icons.svg#html5"></use></svg>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#663399" aria-hidden="true"><use href="./assets/icons.svg#css"></use></svg>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#CC6699" aria-hidden="true"><use href="./assets/icons.svg#sass"></use></svg>
+                            <span>Sass</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#F7DF1E" aria-hidden="true"><use href="./assets/icons.svg#javascript"></use></svg>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#F03C2E" aria-hidden="true"><use href="./assets/icons.svg#git"></use></svg>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#181717" aria-hidden="true"><use href="./assets/icons.svg#github"></use></svg>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#D97757" aria-hidden="true"><use href="./assets/icons.svg#claude"></use></svg>
+                            <span>Claude</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#5FA04E" aria-hidden="true"><use href="./assets/icons.svg#nodejs"></use></svg>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <svg class="skill-icon" fill="#F24E1E" aria-hidden="true"><use href="./assets/icons.svg#figma"></use></svg>
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="resume" class="resume animate-section">
+                    <h2 class="section-title">Resume</h2>
+                
+                    <a href="./CV_and_Cover_Daniil_Gerasimyonok.pdf" download class="resume-download">
+                        Download CV/Cover
+                    </a>
+                
+                    <div class="resume-columns">
+                
+                        <div class="resume-column">
+                            <h3>Education</h3>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">Mar 2026</span>
+                                <h4>Algorithmic Practice</h4>
+                                <p>LeetCode, Leipzig</p>
+                                <p>Solved problems covering arrays, two-pointer techniques, linked lists, sliding window, dynamic programming, and binary search.</p>
+                            </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">Jan 2024 — Jan 2025</span>
+                                <h4>Web Development</h4>
+                                <p>Codecademy, Leipzig</p>
+                                <p>JavaScript, HTML/SCSS, DOM manipulation, version control.</p>
+                            </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">Jan 2021 — Dec 2022</span>
+                                <h4>Frontend Developer Course</h4>
+                                <p>Rolling Scopes School, Minsk</p>
+                                <p>JavaScript, responsive layouts, REST API integration, DOM manipulation, Git/GitHub, algorithmic problem-solving.</p>
+                            </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">2021 — 2022</span>
+                                <h4>Algorithmic Thinking Practice</h4>
+                                <p>Codewars, Minsk</p>
+                                <p>JavaScript coding challenges, algorithms, data structures.</p>
+                            </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">Jan 2020 — Apr 2020</span>
+                                <h4>Markup / HTML / CSS</h4>
+                                <p>HTML Academy, Minsk</p>
+                                <p>HTML5, CSS3 (Flexbox, Grid), semantic markup, responsive layouts.</p>
+                            </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">2020</span>
+                                <h4>Modern JavaScript</h4>
+                                <p>LearnJS, Minsk</p>
+                                <p>JavaScript fundamentals to OOP: variables, functions, closures, prototypes, ES6+ syntax.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact animate-section slide-right">
+                    <div class="scroll-parallax-bg" data-scroll-speed="0.12"></div>
+                    <h2 class="section-title">Contact</h2>
+                
+                    <p class="contact-intro">Open to trainee/junior frontend opportunities — remote across Germany or on-site in Leipzig or Berlin.</p>
+                
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <svg class="link-icon" fill="#EA4335" aria-hidden="true"><use href="./assets/icons.svg#gmail"></use></svg>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/DaniilGK" target="_blank" class="contact-link">
+                            <svg class="link-icon" fill="#181717" aria-hidden="true"><use href="./assets/icons.svg#github"></use></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniilgk/" target="_blank" class="contact-link">
+                            <svg class="link-icon" fill="#0076b2" aria-hidden="true"><use href="./assets/icons.svg#linkedin"></use></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <p>Made by <a href="https://github.com/DaniilGK" target="_blank">DaniilGK</a> for the <a href="https://www.codealpha.tech" target="_blank">CodeAlpha</a> Frontend Development Internship</p>
+                <p>Source code: <a href="https://github.com/DaniilGK/CodeAlpha_Calculator" target="_blank">GitHub repo</a></p>
+                <p>&copy; 2026 Daniil Gerasimyonok</p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
