@@ -34,7 +34,7 @@ CodeAlpha_ImageGallery/
         
 ## **How to Run**
 
-Open [Images Gallery](https://daniilgk.github.io/CodeAlpha_ImageGallery/) in your browser.
+Open [Images Gallery](https://daniilgk.github.io/codealpha_tasks/CodeAlpha_ImageGallery/) in your browser.
 
 ## **Author**
 
