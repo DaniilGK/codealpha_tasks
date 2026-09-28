@@ -265,14 +265,27 @@ section {
   transform: scale(1);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+.project-card:nth-child(4) img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+}
+
+.project-image-container {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.75), transparent 42%), linear-gradient(145deg, rgba(0, 123, 255, 0.28), rgba(0, 123, 255, 0.72));
+  overflow: hidden;
+}
 
 .project-image {
   width: 100%;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: contain;
+  transform: scale(1.7);
+  transform-origin: top center;
   display: block;
-  background: radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.75), transparent 42%), linear-gradient(145deg, rgba(0, 123, 255, 0.28), rgba(0, 123, 255, 0.72));
 }
 
 .project-info {
@@ -635,6 +648,9 @@ section {
     min-height: auto;
     padding: 3rem 0.5rem;
     scroll-margin-top: 5.5rem;
+  }
+  .project-card:nth-child(4) img {
+    height: 100%;
   }
   .skills-grid {
     grid-template-columns: repeat(3, 1fr);

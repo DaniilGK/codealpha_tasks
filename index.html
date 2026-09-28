@@ -77,10 +77,37 @@
                 
                     <div class="slider">
                         <button class="slider-btn slider-prev" aria-label="Previous project">&#10094;</button>
-                
+                        
                         <div class="slider-track">
                             <article class="project-card">
-                                <div class="project-image" role="img" aria-label="Image Gallery project screenshot"></div>
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/music_player.gif" alt="Music Player preview" class="project-image" loading="lazy">
+                                </div>
+                                <div class="project-info">
+                                    <h3>Music Player</h3>
+                                    <p>A music player with a playlist, a progress bar synced to playback, and a 3D mouse-parallax background.</p>
+                                    <div class="project-tags">
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#E34F26" aria-hidden="true"><use href="./assets/icons.svg#html5"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#CC6699" aria-hidden="true"><use href="./assets/icons.svg#sass"></use></svg>
+                                        </div>
+                                        <div class="project-icons">
+                                            <svg class="project-icon" fill="#F7DF1E" aria-hidden="true"><use href="./assets/icons.svg#javascript"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://daniilgk.github.io/CodeAlpha_MusicPlayer/" target="_blank">Live Demo</a>
+                                        <a href="https://github.com/DaniilGK/CodeAlpha_MusicPlayer" target="_blank">Source Code</a>
+                                    </div>
+                                </div>
+                            </article>
+                            
+                            <article class="project-card">
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/gallery.gif" alt="Image Gallery preview" class="project-image" loading="lazy">
+                                </div>
                                 <div class="project-info">
                                     <h3>Image Gallery</h3>
                                     <p>A responsive image gallery with category filtering, a lightbox, and smooth transitions.</p>
@@ -103,7 +130,9 @@
                             </article>
                 
                             <article class="project-card">
-                                <div class="project-image" role="img" aria-label="Calculator project screenshot"></div>
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/calculator.gif" alt="Calculator preview" class="project-image" loading="lazy">
+                                </div>
                                 <div class="project-info">
                                     <h3>Calculator</h3>
                                     <p>A calculator with operator precedence, parentheses, a live preview, and calculation history.</p>
@@ -126,7 +155,9 @@
                             </article>
 
                             <article class="project-card">
-                                <div class="project-image" role="img" aria-label="Virtual Keyboard project screenshot"></div>
+                                <div class="project-image-container">
+                                    <img src="./assets/gif/keyboard.gif" alt="Virtual Keyboard preview" class="project-image" loading="lazy">
+                                </div>
                                 <div class="project-info">
                                     <h3>Virtual Keyboard</h3>
                                     <p>An on-screen keyboard with EN/RU layouts, Shift and Caps Lock, synced with the physical keyboard.</p>
@@ -147,29 +178,6 @@
                                     </div>
                                 </div>
                             </article>
-
-                            <!-- <article class="project-card">
-                                <div class="project-image" role="img" aria-label="Finance Landing Page project screenshot"></div>
-                                <div class="project-info">
-                                    <h3>Finance Landing Page</h3>
-                                    <p>A finance landing page with a hero slider, product cards, a mobile menu, and search.</p>
-                                    <div class="project-tags">
-                                        <div class="project-icons">
-                                            <svg class="project-icon" fill="#E34F26" aria-hidden="true"><use href="./assets/icons.svg#html5"></use></svg>
-                                        </div>
-                                        <div class="project-icons">
-                                            <svg class="project-icon" fill="#CC6699" aria-hidden="true"><use href="./assets/icons.svg#css"></use></svg>
-                                        </div>
-                                        <div class="project-icons">
-                                            <svg class="project-icon" fill="#F7DF1E" aria-hidden="true"><use href="./assets/icons.svg#javascript"></use></svg>
-                                        </div>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="https://daniilgk.github.io/git-pages.daniilgk.io/finance/" target="_blank">Live Demo</a>
-                                        <a href="https://github.com/DaniilGK/git-pages.daniilgk.io/tree/gh-pages/finance" target="_blank">Source Code</a>
-                                    </div>
-                                </div>
-                            </article> -->
                             
                         </div>
                 
@@ -224,38 +232,55 @@
                 <section id="resume" class="resume animate-section">
                     <h2 class="section-title">Resume</h2>
                 
-                    <a href="./CV_Daniil_Gerasimyonok.pdf" download class="resume-download">
-                        Download CV (PDF)
+                    <a href="./CV_and_Cover_Daniil_Gerasimyonok.pdf" download class="resume-download">
+                        Download CV/Cover
                     </a>
                 
                     <div class="resume-columns">
-                    
+                
                         <div class="resume-column">
                             <h3>Education</h3>
+                
                             <div class="resume-item">
-                                <span class="resume-date">2024 — Present</span>
+                                <span class="resume-date">Mar 2026</span>
+                                <h4>Algorithmic Practice</h4>
+                                <p>LeetCode, Leipzig</p>
+                                <p>Solved problems covering arrays, two-pointer techniques, linked lists, sliding window, dynamic programming, and binary search.</p>
+                            </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">Jan 2024 — Jan 2025</span>
                                 <h4>Web Development</h4>
                                 <p>Codecademy, Leipzig</p>
+                                <p>JavaScript, HTML/SCSS, DOM manipulation, version control.</p>
                             </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">Jan 2021 — Dec 2022</span>
+                                <h4>Frontend Developer Course</h4>
+                                <p>Rolling Scopes School, Minsk</p>
+                                <p>JavaScript, responsive layouts, REST API integration, DOM manipulation, Git/GitHub, algorithmic problem-solving.</p>
+                            </div>
+                
                             <div class="resume-item">
                                 <span class="resume-date">2021 — 2022</span>
-                                <h4>Front End Developer Course</h4>
-                                <p>Rolling Scopes School</p>
+                                <h4>Algorithmic Thinking Practice</h4>
+                                <p>Codewars, Minsk</p>
+                                <p>JavaScript coding challenges, algorithms, data structures.</p>
                             </div>
+                
+                            <div class="resume-item">
+                                <span class="resume-date">Jan 2020 — Apr 2020</span>
+                                <h4>Markup / HTML / CSS</h4>
+                                <p>HTML Academy, Minsk</p>
+                                <p>HTML5, CSS3 (Flexbox, Grid), semantic markup, responsive layouts.</p>
+                            </div>
+                
                             <div class="resume-item">
                                 <span class="resume-date">2020</span>
-                                <h4>Markup and CSS</h4>
-                                <p>HTML Academy</p>
-                            </div>
-                            <div class="resume-item">
-                                <span class="resume-date">2019 — 2020</span>
                                 <h4>Modern JavaScript</h4>
-                                <p>LearnJS</p>
-                            </div>
-                            <div class="resume-item">
-                                <span class="resume-date">2023 — 2026</span>
-                                <h4>Ausbildung zum Koch (IHK)</h4>
-                                <p>Susanna-Eger-Schule, Leipzig</p>
+                                <p>LearnJS, Minsk</p>
+                                <p>JavaScript fundamentals to OOP: variables, functions, closures, prototypes, ES6+ syntax.</p>
                             </div>
                         </div>
                     </div>
