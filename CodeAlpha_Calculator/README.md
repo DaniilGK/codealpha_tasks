@@ -32,7 +32,7 @@ CodeAlpha_Calculator/
 
 ## **How to Run**
 
-Open [Calculator](https://daniilgk.github.io/CodeAlpha_Calculator/) in your browser.
+Open [Calculator](https://daniilgk.github.io/codealpha_tasks/CodeAlpha_Calculator/) in your browser.
 
 ## **Author**
 
