@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/gallery-svgrepo-com.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body>
+
+    <div id="top" class="container">
+
+        <h1>Image Gallery</h1>
+        <p>Explore curated exhibitions featuring contemporary artists. Timeless works, bold visions, unforgettable.</p>
+
+        <div class="navigation">
+            <ul class="navigation-list">
+                <li><a href="#" class="active" data-filter="all">All</a></li>
+                <li><a href="#" data-filter="nature">Nature</a></li>
+                <li><a href="#" data-filter="people">People</a></li>
+                <li><a href="#" data-filter="streets">Streets</a></li>
+            </ul>
+        </div>
+
+        <div class="grid-gallery"> 
+
+            <div data-category="nature" class="category">
+                <h2 class="category-title">nature</h2>
+                <div class="grid-images">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/annie-spratt-GJCLsZ4GtRE-unsplash.jpg" alt="annie-spratt">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/annie-spratt-gJMls7cPvts-unsplash.jpg" alt="annie-spratt">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/emily-sandoval-PBbCf6RQwdI-unsplash.jpg" alt="emily-sandoval">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/esma-melike-sezer-k8zIoFzMXNw-unsplash.jpg" alt="esma-melike-sezer">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/katie-kirkman-CW4VeRjMZjE-unsplash.jpg" alt="katie-kirkman">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/silali-banerjee-3JLRF3Yn3f0-unsplash.jpg" alt="silali-banerjee">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/sodo-sane-1O1KExjoQQY-unsplash.jpg" alt="sodo-sane">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/viktoriya-lissachenko-cShMGr61WD4-unsplash.jpg" alt="viktoriya-lissachenko">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/nature/anita-austvika-vNJgLXzON-Y-unsplash.jpg" alt="anita-austvika">
+                </div>
+            </div>
+
+            <div data-category="people" class="category">
+                <h2 class="category-title">people</h2>
+                <div class="grid-images">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/people/agung-prayoga-r5ygkIlNNE4-unsplash.jpg" alt="agung-prayoga">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/people/alghozy-nGh-7uMHT98-unsplash.jpg" alt="alghozy">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/people/kamara-rahmat-1GeBFmg0Xa0-unsplash.jpg" alt="kamara-rahmat">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/people/esma-melike-sezer-f7741znO77s-unsplash.jpg" alt="esma-melike-sezer">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/people/kamara-rahmat-tezBLHCZ7ao-unsplash.jpg" alt="kamara-rahmat">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/people/round-icons-r9M-Qe6Thgc-unsplash.jpg" alt="round-icons">
+                </div>
+            </div>
+
+            <div data-category="streets" class="category">
+                <h2 class="category-title">streets</h2>
+                <div class="grid-images">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/aliaksei-lepik-goa_pgKhAnI-unsplash.jpg" alt="aliaksei-lepik-goa">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/artur-adilkhanian-EIo9tWYAFc4-unsplash.jpg" alt="artur-adilkhanian">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/bruno-bd-FFGHpRop-DU-unsplash.jpg" alt="bruno-bd">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/gabriele-merlino-fa5so58oDAI-unsplash.jpg" alt="gabriele-merlino">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/martin-bennie-MhYU5K4A93I-unsplash.jpg" alt="martin-bennie">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/ruben-mavarez-wWcadZJcsYM-unsplash.jpg" alt="ruben-mavarez">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/the-metropolitan-museum-of-art-S2WA31buOIA-unsplash.jpg" alt="the-metropolitan-museum-of-art">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/denis-gorbuleac-3jXJz1kgraw-unsplash.jpg" alt="robert-h-lewis">
+                    <img class="image" onclick="openLightbox(event)" src="./assets/images/streets/rizki-kurniawan-cG0VVchH9Fc-unsplash.jpg" alt="denis-savchenko">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        
+        <ul class="footer-navigation-list">
+            <li><a href="#" class="active" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="nature">Nature</a></li>
+            <li><a href="#" data-filter="people">People</a></li>
+            <li><a href="#" data-filter="streets">Streets</a></li>
+        </ul>
+
+        <p>Made by <a href="https://github.com/DaniilGK" target="_blank">DaniilGK</a> for the <a href="https://www.codealpha.tech" target="_blank">CodeAlpha</a> Frontend Development Internship</p>
+
+        <p>Source code: <a href="https://github.com/DaniilGK/CodeAlpha_ImageGallery" target="_blank">GitHub repo</a></p>
+    
+        <p>&copy; 2026 Daniil Gerasimyonok</p>
+
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox">            
+        <div class="lightbox-content">
+
+            <button class="lightbox-close">×</button>
+            <button class="lightbox-prev">❬</button>
+            <button class="lightbox-next">❭</button>
+
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/annie-spratt-GJCLsZ4GtRE-unsplash.jpg" alt="annie-spratt"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/annie-spratt-gJMls7cPvts-unsplash.jpg" alt="annie-spratt"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/emily-sandoval-PBbCf6RQwdI-unsplash.jpg" alt="emily-sandoval"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/esma-melike-sezer-k8zIoFzMXNw-unsplash.jpg" alt="esma-melike-sezer"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/katie-kirkman-CW4VeRjMZjE-unsplash.jpg" alt="katie-kirkman"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/silali-banerjee-3JLRF3Yn3f0-unsplash.jpg" alt="silali-banerjee"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/sodo-sane-1O1KExjoQQY-unsplash.jpg" alt="sodo-sane"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/viktoriya-lissachenko-cShMGr61WD4-unsplash.jpg" alt="viktoriya-lissachenko"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/nature/anita-austvika-vNJgLXzON-Y-unsplash.jpg" alt="anita-austvika"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/people/agung-prayoga-r5ygkIlNNE4-unsplash.jpg" alt="agung-prayoga"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/people/alghozy-nGh-7uMHT98-unsplash.jpg" alt="alghozy"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/people/kamara-rahmat-1GeBFmg0Xa0-unsplash.jpg" alt="kamara-rahmat"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/people/esma-melike-sezer-f7741znO77s-unsplash.jpg" alt="esma-melike-sezer"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/people/kamara-rahmat-tezBLHCZ7ao-unsplash.jpg" alt="kamara-rahmat"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/people/round-icons-r9M-Qe6Thgc-unsplash.jpg" alt="round-icons"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/aliaksei-lepik-goa_pgKhAnI-unsplash.jpg" alt="aliaksei-lepik-goa"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/artur-adilkhanian-EIo9tWYAFc4-unsplash.jpg" alt="artur-adilkhanian"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/bruno-bd-FFGHpRop-DU-unsplash.jpg" alt="bruno-bd"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/gabriele-merlino-fa5so58oDAI-unsplash.jpg" alt="gabriele-merlino"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/martin-bennie-MhYU5K4A93I-unsplash.jpg" alt="martin-bennie"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/ruben-mavarez-wWcadZJcsYM-unsplash.jpg" alt="ruben-mavarez"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/the-metropolitan-museum-of-art-S2WA31buOIA-unsplash.jpg" alt="the-metropolitan-museum-of-art"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/denis-gorbuleac-3jXJz1kgraw-unsplash.jpg" alt="robert-h-lewis"></img>
+            </div>
+            <div class="lightbox-slide">
+                <img class="lightbox-img" src="./assets/images/streets/rizki-kurniawan-cG0VVchH9Fc-unsplash.jpg" alt="denis-savchenko"></img>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

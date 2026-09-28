@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-select: none; 
+}
+
+body {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    padding: 0.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #838c9d;
+    text-decoration: underline;
+}
+
+
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5% 1.5% 0% 1.5%;
+}
+
+.container p {
+    font-size: 1.3rem;
+    padding: 0.5%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding: 1.5%;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style-type: none;
+    font-size: 1.7rem;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.category.hidden {
+    opacity: 0;
+    transform: scale(0.75);
+    pointer-events: none;
+}
+
+.category-title {
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 1.5%;
+}
+
+.grid-gallery {
+    display: grid;
+    gap: 15px;
+    grid-auto-flow: column;
+    padding: 1.5% 0 1.5% 0;
+    border: solid #000;
+    border-width: 2.5px 0;
+}
+
+.grid-gallery.single-view {
+    display: block;
+}
+
+.grid-gallery.single-view .grid-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-gallery.single-view .image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+}
+
+.grid-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    padding: 1.5% 0 1.5% 0;
+    cursor: pointer;
+    filter: brightness(1);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    will-change: filter, transform;
+}
+
+.image:hover {
+    filter: brightness(0.7);
+    transform: scale(1.02);
+    cursor: zoom-in;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5%;
+    font-size: 1.3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-navigation-list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.footer a {
+    color: #3d97fe;
+}
+
+.footer a:hover {
+    color: #7bb8ff;
+}
+
+.footer-navigation-list a {
+    color: #000;
+}
+
+.footer-navigation-list a:hover {
+    color: #838c9d;
+}
+
+.navigation-list a.active,
+.footer-navigation-list a.active {
+    color: #3d97fe;
+    text-decoration: underline;
+}
+
+/* Lightbox */
+
+.lightbox {
+    display: none;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-content {
+    position: relative;
+    width: 90vw; 
+    height: 90vh; 
+    max-width: 900px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.lightbox-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.lightbox-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5%;
+}
+
+.lightbox-prev, 
+.lightbox-next, 
+.lightbox-close { 
+    position: absolute; 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    transition: transform 0.15s ease, color 0.2s ease;
+} 
+
+.lightbox-prev { 
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 2.5rem;
+} 
+
+.lightbox-next { 
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 2.5rem;
+}
+
+.lightbox-close { 
+    top: 10px; 
+    right: 10px; 
+    padding: 0px 5px 0px 0px;
+    font-size: 2rem;
+}
+
+@media (hover: hover) {
+    .lightbox-prev,
+    .lightbox-next,
+    .lightbox-close {
+        color: transparent;
+    }
+
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+        color: #FFD700;
+    }
+
+    .lightbox-close:hover {
+        color: #000;
+    }
+
+    .lightbox-prev:active,
+    .lightbox-next:active { 
+        transform: translateY(-50%) scale(1.25); color: #646161; 
+    }
+
+    .lightbox-close:active { 
+        transform: scale(1.25); color: #646161; 
+    }
+
+    .lightbox-prev.active-key,
+    .lightbox-next.active-key {
+        transform: translateY(-50%) scale(1.25);
+        color: #646161;
+    }
+
+    .lightbox-close.active-key {
+        transform: scale(1.25);
+        color: #646161;
+    }
+}
+
+@media (hover: none) {
+    .lightbox-prev,
+    .lightbox-next {
+        color: #ffd700;
+        font-size: 3.5rem;
+    }
+
+    .lightbox-close {
+        color: #000;
+        font-size: 3.5rem;
+        padding: 10px;
+    }
+
+    .lightbox-prev:active,
+    .lightbox-next:active { 
+        transform: translateY(-50%) scale(1.25); color: #646161; 
+    }
+
+    .lightbox-close:active { 
+        transform: scale(1.25); color: #646161; 
+    }
+
+    .lightbox-prev.active-key,
+    .lightbox-next.active-key {
+        transform: translateY(-50%) scale(1.25);
+        color: #646161;
+    }
+
+    .lightbox-close.active-key {
+        transform: scale(1.25);
+        color: #646161;
+    }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .container p {
+        padding: 4.5%;
+    }
+
+    .navigation {
+        padding: 2.5%;
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 15px;
+        align-items: end;
+        justify-items: start;
+        padding: 1.5%;
+    }
+
+    .footer-navigation-list {
+        gap: 10px;
+    }
+}
