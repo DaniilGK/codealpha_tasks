@@ -31,7 +31,7 @@ CodeAlpha_MusicPlayer/
 
 ## **How to Run**
 
-Open [Music Player](https://daniilgk.github.io/CodeAlpha_MusicPlayer/) in your browser.
+Open [Music Player](https://daniilgk.github.io/codealpha_tasks/CodeAlpha_MusicPlayer/) in your browser.
 
 ## **Author**
 
